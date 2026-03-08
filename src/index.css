@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-studio-gold: #D4AF37;
+  --color-studio-dark: #0A0A0A;
+  --color-studio-gray: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-studio-dark text-white font-sans antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
+
+.gold-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] via-[#F9E29C] to-[#D4AF37];
+}
+
+.studio-button {
+  @apply px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2;
+}
+
+.studio-button-primary {
+  @apply bg-studio-gold text-black hover:bg-[#F9E29C] active:scale-95;
+}
+
+.studio-button-secondary {
+  @apply bg-white/10 text-white hover:bg-white/20 border border-white/10 active:scale-95;
+}

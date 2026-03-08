@@ -1,0 +1,8 @@
+{
+  "name": "BILAL-V Studio",
+  "description": "Professional 4K video editing and AI-powered creative studio hub featuring advanced image and video generation, transcription, and intelligent search.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
